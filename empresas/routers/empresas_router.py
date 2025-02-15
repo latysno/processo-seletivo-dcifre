@@ -38,5 +38,6 @@ def criar_empresa(empresa: EmpresasCadastradasRequest):
     endereco = empresa.endereco,
     email = empresa.email,
     telefone = empresa.telefone
+        
     )
 

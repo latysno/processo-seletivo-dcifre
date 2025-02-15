@@ -2,3 +2,4 @@ flask-swagger-ui==4.11.1
 fastapi==0.115.8
 SQLAlchemy==2.0.38
 pydantic==2.10.6
+psycopg2==2.9.10

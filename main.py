@@ -1,8 +1,14 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-
 from empresas.routers import empresas_router
+from shared.database import engine, Base
+
+from empresas.models.empresas_obrigacao_model import Empresa, ObrigacaoAcessoria
+
+
+Base.metadata.drop_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
