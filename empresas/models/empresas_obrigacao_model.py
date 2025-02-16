@@ -22,5 +22,5 @@ class ObrigacaoAcessoria(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String)
-    periocidade = Column(String)
+    periodicidade = Column(String) #mensal ,trimestral ,anual
     empresa_id = Column(Integer, ForeignKey("empresa.id"))
